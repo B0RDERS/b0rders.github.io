@@ -17,7 +17,7 @@ export default function Home() {
       <a href="https://calendar.app.google/TyGTHr7NuYmsXKLS7">
         <FaCalendar/>
       </a>
-      <a href="/resume">
+      <a href="/resume.pdf">
         <FaFilePdf/>
       </a>
     </div>
