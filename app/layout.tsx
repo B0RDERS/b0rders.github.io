@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
-import "./globals.css";
-
-const robotoMono = Roboto_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "Andrew Borders",
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robotoMono.variable}`}>
+      <body>
         {children}
       </body>
     </html>
