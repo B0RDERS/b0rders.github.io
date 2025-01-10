@@ -74,7 +74,7 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.projectItem}>
-          <h3>WebGPU Renderer <a href="https://aborders.dev/webgpu-rasterizer/" aria-label="Live Demo of WebGPU Renderer"><FaLink/></a></h3>
+          <h3>WebGPU Renderer <a href="https://b0rders.github.io/webgpu-rasterizer/" aria-label="Live Demo of WebGPU Renderer"><FaLink/></a></h3>
           <p>
             <strong>Independent Project</strong> | Aug 2024 - Sep 2024
           </p>
