@@ -74,7 +74,7 @@ export default function Home() {
           </ul>
         </div>
         <div className={styles.projectItem}>
-          <h3>WebGPU Renderer <a href="https://aborders.dev/webgpu-rasterizer/"><FaLink/></a></h3>
+          <h3>WebGPU Renderer <a href="https://aborders.dev/webgpu-rasterizer/" aria-label="Live Demo of WebGPU Renderer"><FaLink/></a></h3>
           <p>
             <strong>Independent Project</strong> | Aug 2024 - Sep 2024
           </p>
@@ -104,22 +104,22 @@ export default function Home() {
       </div>
       <div className={styles.footer} id="footer">
         <div className={styles.footerLinks}>
-          <a href="tel:+15127393210">
+          <a href="tel:+15127393210" aria-label="Andrew Borders' Cell Phone">
             <FaPhone />
           </a>
-          <a href="mailto:atborders1@gmail.com">
+          <a href="mailto:atborders1@gmail.com" aria-label="Andrew Borders' Email">
             <FaEnvelope />
           </a>
-          <a href="https://calendar.app.google/TyGTHr7NuYmsXKLS7">
+          <a href="https://calendar.app.google/TyGTHr7NuYmsXKLS7" aria-label="Andrew Borders' Calendar">
             <FaCalendar />
           </a>
-          <a href="https://www.linkedin.com/in/b0rders/">
+          <a href="https://www.linkedin.com/in/b0rders/" aria-label="Andrew Borders' Linkedin">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/B0RDERS">
+          <a href="https://github.com/B0RDERS" aria-label="Andrew Borders' Github">
             <FaGithub />
           </a>
-          <a href="/resume.pdf">
+          <a href="/resume.pdf" aria-label="Andrew Borders' Resume">
             <FaFilePdf />
           </a>
         </div>
