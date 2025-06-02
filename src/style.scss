@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --max-width: 800px;
+  --primary-color: #333;
+  --border-color: #ddd;
+  --background-color: #fff;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color);
+  background-color: #f5f5f5;
+  padding: 2rem 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  margin-block: 0.5rem;
+  margin-inline: 0;
+}
+
+h2 {
+  border-block-start: 2px solid var(--border-color);
+  padding-block-start: 0.5rem;
+  margin-block-start: 1.5rem;
+  color: var(--primary-color);
+}
+
+ul {
+  margin-block: 0.5rem;
+  padding-inline-start: 1.5em;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+#resume {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-block-end: 2rem;
+}
+
+#headshot {
+  width: min(25vw, 25vh);
+  height: min(25vw, 25vh);
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+#headshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1.5;
+}
+
+p {
+  display: flex;
+  align-items: end;
+  margin-block: 0.5rem;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #004499;
+    text-decoration: underline;
+  }
+}
+
+p svg {
+  margin-inline-start: 0.25rem;
+  height: 1em;
+  width: 1em;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#header p {
+  display: block;
+}
+
+#contact {
+  display: flex;
+  gap: 1rem;
+}
+
+#skills p {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  #headshot {
+    width: min(50vw, 25vh);
+    height: min(50vw, 25vh);
+  }
+  
+  #resume {
+    padding: 1rem;
+  }
+  
+  body {
+    padding: 1rem 0.5rem;
+  }
+}
